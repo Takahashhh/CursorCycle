@@ -1,72 +1,24 @@
-CursorCycle 1.1.1 — カーソル自動切り替え
+CursorCycle Lite
 
-■ 起動
-CursorCycle.exe をダブルクリックしてください。
-初回起動時、必要な内部ファイルを %LOCALAPPDATA%\CursorCycle へ保存し、
-デスクトップにショートカットを作成します。EXE単体でも配布・起動できます。
-既存版を使用中の場合は、先にトレイから「常駐を終了」を選んでください。
-固定の2キャラクター版は「自動切り替えを停止」してから使ってください。
+日本語：フォルダ/ZIP取り込み、役割割り当て、分/時間/日単位の登録順切り替え、手動切り替え、トレイ、元の設定への復元、7言語、未保存変更の確認に対応。
+プレビュー・ランダム/曜日/時刻指定・ログイン時起動・診断画面は通常版のみです。
+CursorCycleLite.exeを起動し、2セット以上を登録して周期を選び「保存して自動開始」。
+通常版とは別の設定・タスクを使用します。両方の自動切り替えを同時に有効にしないでください。
+削除：常駐終了後、Win+Rから %LOCALAPPDATA%\CursorCycleLite\Uninstall.cmd。
+カーソル素材は同梱していません。プログラムはMITライセンス。実際の適用・定期実行・復元は実機確認が必要です。
 
-■ カーソルの登録と自動切り替え
-1. 「フォルダを取り込む」または「ZIPを取り込む」でセットを追加します。
-2. 各役割のファイルを確認し、必要に応じてドロップダウンで変更します。
-   判別できるファイル名は自動で割り当てます。未指定はWindows標準です。
-3. 2セット以上を登録し、周期を「分・時間・日」で設定します（最短1分）。
-4. 「保存して自動開始」を押します。選択したセットから登録順に循環します。
-   ↑↓で順序を変更できます。1セットだけの場合は手動適用ができます。
+English: Import folders/ZIPs, assign cursor roles, rotate in order at a minutes/hours/days interval, switch manually, use the tray, restore originals, select one of seven languages, and protect unsaved edits.
+Preview, shuffle/calendar modes, login startup and diagnostics are available only in the full edition.
+Run CursorCycleLite.exe, import at least two sets, choose an interval and click Save and start.
+Settings/tasks are separate from the full edition. Do not enable automatic rotation in both editions simultaneously.
+Uninstall: exit the tray app, then Win+R: %LOCALAPPDATA%\CursorCycleLite\Uninstall.cmd.
+No cursor artwork included. MIT license. Actual cursor application, scheduling and restoration need real-machine checks.
 
-取り込んだ .cur / .ani はPC内へコピーされるので、元のZIPやフォルダは移動できます。
-1フォルダ／1ZIPを1セットとして取り込みます。ZIPはパスワードなしを使用してください。
-複数セット入りZIPは個別のフォルダに分けて取り込んでください。
-同名の候補が複数ある役割は自動で選びません。割り当てを確認してください。
-INFやEXEは実行しません。最大5000カーソル・合計250MB・1ファイル25MBまでです。
+简体中文：支持文件夹/ZIP导入、用途分配、按间隔顺序切换、手动切换、托盘、恢复、7语言及未保存更改确认。高级功能仅限完整版。请勿同时启用两版的自动切换。
+Deutsch: Ordner/ZIP-Import, Zuordnung, Intervallwechsel in Reihenfolge, manueller Wechsel, Infobereich, Wiederherstellung, 7 Sprachen und Schutz ungespeicherter Änderungen. Erweiterte Funktionen nur in der Vollversion. Nicht beide Zeitpläne gleichzeitig aktivieren.
+한국어: 폴더/ZIP, 용도 할당, 주기별 순차 전환, 수동 전환, 트레이, 복원, 7개 언어, 미저장 확인을 지원합니다. 고급 기능은 일반판 전용입니다. 두 버전의 자동 전환을 동시에 켜지 마세요.
+Français : import dossier/ZIP, affectations, rotation par intervalle, changement manuel, notification, restauration, 7 langues et protection des modifications. Fonctions avancées dans la version complète. Ne pas activer les deux rotations simultanément.
+Español: importación de carpetas/ZIP, asignaciones, cambio por intervalo, cambio manual, bandeja, restauración, 7 idiomas y protección de cambios. Funciones avanzadas solo en la versión completa. No activar ambas rotaciones a la vez.
 
-編集後は「設定を保存」を押してください。未保存の編集は別セットを選ぶと破棄されます。
-保存・取り込み・削除・並べ替えを行うと自動切り替えは停止します。再度開始してください。
-
-■ タスクトレイ
-閉じる／最小化でトレイへ格納、ダブルクリックで画面を再表示します。
-右クリックで次のセットへ移動、自動開始／停止、元の設定への復元、常駐終了ができます。
-「次のセットへ」と自動開始は、その時点を周期の起点にします。
-常駐を終了しても、有効な自動切り替えはWindowsのタスクで継続します。
-トレイ常駐自体はログイン時に自動起動しません。ショートカットから起動してください。
-
-スリープ・電源OFF中は変更できません。復帰・ログイン後に経過時間に対応するセットへ
-追いつきます。期限の確認は常駐中は約10秒、常駐終了後は約1分間隔です。
-指定時刻より遅れる場合があり、Windowsの実行状況によっては1分以上遅れることもあります。
-PCの日付・時刻の変更は切り替え計算に影響します。
-
-■ 更新・削除
-更新：トレイの「常駐を終了」を選び、新しいEXEを実行します。セットと設定は引き継ぎます。
-復元：トレイの「初回起動前のカーソルに戻す」を選びます。
-      復元対象は、最初にこのアプリでカーソルを適用する直前の状態です。
-削除：常駐を終了した後、Windowsキー＋Rで次を入力して実行します。
-      %LOCALAPPDATA%\CursorCycle\Uninstall.cmd
-      自動実行を解除し、元のカーソルを復元して、設定・取り込みデータも削除します。
-      復元が失敗した場合は、ファイルを削除せずエラーを表示します。
-      自分でダウンロードした配布EXE／ZIPは必要に応じて削除してください。
-セット削除では、使用中のカーソルを壊さないよう取り込みファイルは保持します。
-これらのファイルはアンインストール時にまとめて削除します。
-エラー時のログ：%LOCALAPPDATA%\CursorCycle\error.log
-
-■ 動作環境と配布
-Windows 10/11向け。標準の.NET FrameworkとWindows PowerShell 5.1を使います。
-追加モジュールやPythonは不要です。通常は管理者権限も不要です。
-組織の実行制限があるPCでは利用できない場合があります。
-本EXEは未署名です。Windowsの設定により実行時の警告が表示される場合があります。
-外部通信・アップロード機能はありません。
-
-この配布物には、第三者のカーソル素材、キャラクター画像、個人設定を同梱していません。
-利用者が使用を許可されたカーソルを自分で用意してください。
-取り込んだカーソルの権利は各制作者に帰属し、本プログラムのライセンスは
-そのカーソル自体の再配布を許諾するものではありません。
-他の人へ渡す場合は、アプリの保存フォルダではなく、この未使用の配布パッケージを渡してください。
-プログラムと専用アイコンは LICENSE.txt のMITライセンスで改変・再配布できます。
-
-■ 検証範囲
-EXEの展開・更新、起動・終了、トレイ格納・再表示、フォルダ／ZIPの取り込み、
-設定の保存と読み込み、任意周期・複数セットの計算、不正なZIPパスの拒否を確認済みです。
-自動開始／停止などの制御フローはWindowsへの変更部分を置き換えた検証も行っています。
-開発環境の制限により、実際のカーソル適用・タスク登録・ログイン後の切り替え・
-復元・アンインストールは通常のWindows環境での確認が未完了です。
-一般公開前にこれらの動作を実機で確認してください。
+Windows 10/11; standard .NET Framework + Windows PowerShell 5.1. Unsigned EXE. No network communication.
+Runtime/settings: %LOCALAPPDATA%\CursorCycleLite. Keep README and LICENSE when distributing.
